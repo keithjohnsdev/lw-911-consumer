@@ -1,7 +1,8 @@
 import Container from "./Shared/Container";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import BlueGradientBtn, { RedGradientBtn } from "./Shared/Buttons";
 const Telemedicine = (props) => {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className="telemedicine">
@@ -43,7 +44,7 @@ const Telemedicine = (props) => {
           </div>
           <div className="footer">
             <BlueGradientBtn>Share Profile</BlueGradientBtn>
-            <RedGradientBtn>End Call</RedGradientBtn>
+            <RedGradientBtn onClick={()=>navigate("/dashboard")}>End Call</RedGradientBtn>
           </div>
         </div>
     </Container>
