@@ -1,0 +1,52 @@
+.home {
+    background-image: url("../theme/assets/iphone-background-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    height: 100vh;
+    width: 100%;
+    max-width: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    & .iphone-frame {
+        position: absolute;
+        width: 113%;
+        left: -27px;
+        height: 100vh;
+        z-index: 0;
+      }
+}
+
+.notification {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.849);
+    margin-top: 40vh;
+    width: 92%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.897);
+    }
+
+    .notification-left {
+        margin: 3px;
+    }
+
+    .notification-right {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        & .notification-title {
+            font-weight: 600;
+            margin: 5px 0;
+        }
+        & .notification-text {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.blue-gradient-btn {
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  background: linear-gradient(to bottom, #40b1e3, #1a94c6);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background: linear-gradient(to bottom, #1a94c6, #40b1e3);
+  }
+}
+
+.red-gradient-btn {
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  background: linear-gradient(to bottom, #e34056, #c61a31);
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  &:hover {
+    background: linear-gradient(to bottom, #c61a31, #e34056);
+  }
+}
