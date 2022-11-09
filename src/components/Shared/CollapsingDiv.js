@@ -10,8 +10,19 @@ const CollapsingDiv = (props) => {
   return (
     <div className={`collapsing-div ${collapsed && "collapsed"}`}>
       <div className="cd-header" onClick={toggleCollapsed}>
+        <svg
+          className="title-icon"
+          width="25"
+          height="25"
+          viewBox="0 0 50 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d={props.svgPath} fill="white" />
+        </svg>
         {props.title}
         <svg
+          className="caret-icon"
           width="22"
           height="13"
           viewBox="0 0 34 20"
@@ -25,7 +36,9 @@ const CollapsingDiv = (props) => {
         </svg>
       </div>
       <div className="content-wrapper">
-        <div className={`content height-${props.height}`}>{props.children} </div>
+        <div className={`content height-${props.height}`}>
+          {props.children}{" "}
+        </div>
       </div>
     </div>
   );

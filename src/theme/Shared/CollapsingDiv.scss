@@ -10,7 +10,8 @@
   & .cd-header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 60px;
     align-items: center;
     flex: 0 0 60px;
     background: linear-gradient(to bottom, #40b3e4, #1b94c6);
@@ -22,9 +23,13 @@
     font-weight: 600;
     letter-spacing: 0.04em;
 
-    & svg {
+    & .caret-icon {
       position: absolute;
       right: 20px;
+    }
+    & .title-icon {
+      position: absolute;
+      left: 20px;
     }
     & svg path {
       fill: rgb(240, 240, 240);
@@ -86,7 +91,7 @@
       flex-basis: 0.1px !important;
       border-radius: 10px;
     }
-    & svg {
+    & .caret-icon {
       transform: rotate(180deg);
     }
   }
