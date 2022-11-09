@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/lw-911-consumer/static/css/main.1daa9d99.css",
+    "main.js": "/lw-911-consumer/static/js/main.9d4bae58.js",
+    "static/js/787.c1405646.chunk.js": "/lw-911-consumer/static/js/787.c1405646.chunk.js",
+    "static/media/iphone-background-3.png": "/lw-911-consumer/static/media/iphone-background-3.852e0fef732fe0fd1f5e.png",
+    "static/media/telemedicine-call.png": "/lw-911-consumer/static/media/telemedicine-call.9e0720745a35b18c03cc.png",
+    "static/media/live-map.png": "/lw-911-consumer/static/media/live-map.a0c8a45005495a751c36.png",
+    "static/media/edwin.png": "/lw-911-consumer/static/media/edwin.0e999f6734a455748334.png",
+    "static/media/iphone-frame.png": "/lw-911-consumer/static/media/iphone-frame.b8e4c16d7a7e113dba25.png",
+    "index.html": "/lw-911-consumer/index.html",
+    "main.1daa9d99.css.map": "/lw-911-consumer/static/css/main.1daa9d99.css.map",
+    "main.9d4bae58.js.map": "/lw-911-consumer/static/js/main.9d4bae58.js.map",
+    "787.c1405646.chunk.js.map": "/lw-911-consumer/static/js/787.c1405646.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1daa9d99.css",
+    "static/js/main.9d4bae58.js"
+  ]
+}
