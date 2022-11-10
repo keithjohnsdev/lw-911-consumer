@@ -49,7 +49,7 @@ const LiveMap = (props) => {
           />
         </div>
         <div className="footer live-map">
-            <BlueGradientBtn>Start Navigation to Scene</BlueGradientBtn>
+            <BlueGradientBtn>Share Live Location</BlueGradientBtn>
           </div>
       </div>
     </Container>
