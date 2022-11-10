@@ -8,7 +8,7 @@ import {
   mockInsuranceData,
 } from "../graphql/mockData";
 import VitalsRow from "./Shared/VitalsRow";
-import { Container3 } from "./Shared/Container";
+import MedicationsRow from "./Shared/MedicationsRow";
 
 const Dashboard = (props) => {
   const navigate = useNavigate();
@@ -82,21 +82,12 @@ const Dashboard = (props) => {
             <div className="patient-data-rows">
               {medicationsData.map((metric, index) => {
                 return (
-                  <div className="patient-data-row" key={index}>
-                    <Container3>
-                      <div className="row-content">
-                        <div className="metric-title">
-                          <p className="title">{metric.title}</p>
-                          {metric.lastReading && (
-                            <p className="subtitle">{`Last Reading: ${metric.lastReading}`}</p>
-                          )}
-                        </div>
-                        <div className="metric-value">
-                          <p>{metric.dosage}</p>
-                        </div>
-                      </div>
-                    </Container3>
-                  </div>
+                  <MedicationsRow
+                  key={index}
+                  metric={metric}
+                  index={index}
+                  showVitalsModal={props.showVitalsModal}
+                />
                 );
               })}
             </div>

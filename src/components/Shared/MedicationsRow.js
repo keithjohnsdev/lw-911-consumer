@@ -1,8 +1,7 @@
 import { Container3 } from "./Container";
-import LightBlueButton from "./Buttons";
 import { useState } from "react";
 
-const VitalsRow = (props) => {
+const MedicationsRow = (props) => {
   const metric = props.metric;
   const index = props.index;
   const [highlightMetric, setHighlightMetric] = useState(false);
@@ -12,11 +11,13 @@ const VitalsRow = (props) => {
       <Container3>
         <div className="row-content">
           <div className="metric-title">
-            <p className={highlightMetric ? "red title" : "title"}>{metric.title}</p>
-            <p className="subtitle">{`Last Reading: ${metric.lastReading}`}</p>
+            <p className={highlightMetric ? "title red" : "title"}>{metric.title}</p>
+            {metric.lastReading && (
+              <p className="subtitle">{`Last Reading: ${metric.lastReading}`}</p>
+            )}
           </div>
-          <div className="metric-value vitals">
-            <p className={highlightMetric ? "red" : ""}>{metric.value}</p>
+          <div className="metric-value">
+          <p className={highlightMetric ? "red" : ""}>{metric.dosage}</p>
           </div>
         </div>
       </Container3>
@@ -24,4 +25,4 @@ const VitalsRow = (props) => {
   );
 };
 
-export default VitalsRow;
+export default MedicationsRow;
